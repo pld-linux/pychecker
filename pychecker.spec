@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 
 Summary:	Tool for finding bugs in Python source code
 Summary(pl):	Narzêdzie do wyszukiwania b³êdów w programach napisanych w Pythonie
