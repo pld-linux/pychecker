@@ -42,4 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README CHANGELOG MAINTAINERS KNOWN_BUGS TODO pycheckrc
 %attr(755,root,root) %{_bindir}/*
+%dir %{py_sitedir}/pychecker/
 %{py_sitedir}/pychecker/*.py[co]
