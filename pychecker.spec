@@ -4,7 +4,7 @@ Summary:	Tool for finding bugs in Python source code
 Summary(pl):	Narzêdzie do wyszukiwania b³êdów w programach napisanych w Pythonie
 Name:		pychecker
 Version:	0.8.11
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://telia.dl.sourceforge.net/sourceforge/pychecker/%{name}-%{version}.tar.gz
@@ -35,13 +35,11 @@ rm -rf $RPM_BUILD_ROOT
 
 python ./setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
 
-gzip -9nf README CHANGELOG MAINTAINERS KNOWN_BUGS TODO pycheckrc
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README CHANGELOG MAINTAINERS KNOWN_BUGS TODO pycheckrc
 %attr(755,root,root) %{_bindir}/*
 %{py_sitedir}/pychecker/*.py[co]
