@@ -8,6 +8,7 @@ Release:	1
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://prdownloads.sourceforge.net/pychecker/%{name}-%{version}.tar.gz
+Patch0:		%{name}-checker.patch
 URL:		http://pychecker.sourceforge.net
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %requires_eq	python-modules
@@ -27,6 +28,7 @@ czy C++.
 
 %prep
 %setup  -q
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
