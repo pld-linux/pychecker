@@ -11,7 +11,7 @@ Source0:	http://prdownloads.sourceforge.net/pychecker/%{name}-%{version}.tar.gz
 Patch0:		%{name}-checker.patch
 URL:		http://pychecker.sourceforge.net
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
-%requires_eq	python-modules
+%pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
