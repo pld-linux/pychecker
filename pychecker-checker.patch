@@ -1,0 +1,12 @@
+diff -Nur pychecker-0.8.9.orig/setup.py pychecker-0.8.9/setup.py
+--- pychecker-0.8.9.orig/setup.py	Sat Feb  2 19:09:37 2002
++++ pychecker-0.8.9/setup.py	Mon Mar  4 13:22:44 2002
+@@ -39,7 +39,7 @@
+     remove_file(LOCAL_SCRIPT)
+ 
+     install_dir = sysconfig.get_python_lib() + os.sep + 'pychecker'
+-    checker_py = install_dir + os.sep + 'checker.py'
++    checker_py = install_dir + os.sep + 'checker.pyc'
+     py_exe = sys.executable
+ 
+     script_str = '#! /bin/sh\n\n%s %s "$@"\n' % (py_exe, checker_py)
