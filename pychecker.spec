@@ -10,7 +10,7 @@ Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	aedbfe99ed1f540cc27243ec22b913c7
 Patch0:		%{name}-checker.patch
-URL:		http://pychecker.sourceforge.net
+URL:		http://pychecker.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %pyrequires_eq	python-modules
 BuildArch:	noarch
