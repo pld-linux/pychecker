@@ -2,7 +2,7 @@ Summary:	Tool for finding bugs in Python source code
 Summary(pl):	Narzêdzie do wyszukiwania b³êdów w programach napisanych w Pythonie
 Name:		pychecker
 Version:	0.8.14
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/pychecker/%{name}-%{version}.tar.gz
@@ -11,6 +11,7 @@ Patch0:		%{name}-checker.patch
 URL:		http://pychecker.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %pyrequires_eq	python-modules
+Requires:	python-modules >= 1:2.3.4-2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
