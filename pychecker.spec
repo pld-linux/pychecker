@@ -8,6 +8,7 @@ Release:	1
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://telia.dl.sourceforge.net/sourceforge/pychecker/%{name}-%{version}.tar.gz
+# Source0-md5:	aedbfe99ed1f540cc27243ec22b913c7
 Patch0:		%{name}-checker.patch
 URL:		http://pychecker.sourceforge.net
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
