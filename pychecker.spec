@@ -6,7 +6,7 @@ Release:	1
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/pychecker/%{name}-%{version}.tar.gz
-# Source0-md5:	531214b2c922462eb57dde5d37f004ac
+# Source0-md5:	74b65d9c8a0dd24d76fc3127769f2ad2
 URL:		http://pychecker.sourceforge.net/
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
