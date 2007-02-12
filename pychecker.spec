@@ -1,5 +1,5 @@
 Summary:	Tool for finding bugs in Python source code
-Summary(pl):	Narzêdzie do wyszukiwania b³êdów w programach napisanych w Pythonie
+Summary(pl.UTF-8):   NarzÄ™dzie do wyszukiwania bÅ‚Ä™dÃ³w w programach napisanych w Pythonie
 Name:		pychecker
 Version:	0.8.17
 Release:	1
@@ -19,10 +19,10 @@ PyChecker is a tool for finding bugs in Python source code. It finds
 problems that are typically caught by a compiler for less dynamic
 languages, like C and C++.
 
-%description -l pl
-PyChecker jest narzêdziem do wyszukiwania b³êdów w programach
-napisanych w Pythonie. Znajduje problemy, które s± zazwyczaj
-wy³apywane przez kompilator w mniej dynamicznych jêzykach takich jak C
+%description -l pl.UTF-8
+PyChecker jest narzÄ™dziem do wyszukiwania bÅ‚Ä™dÃ³w w programach
+napisanych w Pythonie. Znajduje problemy, ktÃ³re sÄ… zazwyczaj
+wyÅ‚apywane przez kompilator w mniej dynamicznych jÄ™zykach takich jak C
 czy C++.
 
 %prep
