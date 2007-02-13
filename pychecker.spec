@@ -1,5 +1,5 @@
 Summary:	Tool for finding bugs in Python source code
-Summary(pl.UTF-8):   Narzędzie do wyszukiwania błędów w programach napisanych w Pythonie
+Summary(pl.UTF-8):	Narzędzie do wyszukiwania błędów w programach napisanych w Pythonie
 Name:		pychecker
 Version:	0.8.17
 Release:	1
