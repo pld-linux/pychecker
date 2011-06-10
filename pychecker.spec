@@ -1,14 +1,13 @@
 Summary:	Tool for finding bugs in Python source code
 Summary(pl.UTF-8):	Narzędzie do wyszukiwania błędów w programach napisanych w Pythonie
 Name:		pychecker
-Version:	0.8.18
+Version:	0.8.19
 Release:	1
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/pychecker/%{name}-%{version}.tar.gz
-# Source0-md5:	ef156a631df46de150a364912f2e36c8
+# Source0-md5:	c37182863dfb09209d6ba4f38fce9d2b
 URL:		http://pychecker.sourceforge.net/
-BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 BuildArch:	noarch
@@ -39,12 +38,14 @@ echo -e '#!/bin/sh
 python %{py_sitescriptdir}/pychecker/checker.pyc "$@"
 ' > $RPM_BUILD_ROOT%{_bindir}/pychecker
 
+%py_postclean
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README CHANGELOG MAINTAINERS KNOWN_BUGS TODO pycheckrc
+%doc README ChangeLog MAINTAINERS KNOWN_BUGS TODO pycheckrc
 %attr(755,root,root) %{_bindir}/*
 %dir %{py_sitescriptdir}/pychecker
 %{py_sitescriptdir}/pychecker/*.py[co]
